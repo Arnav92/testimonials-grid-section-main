@@ -1,0 +1,136 @@
+html {
+    background-color: #ecf2f8;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#testimonials {
+    padding: 5% 3%;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color: white;
+}
+
+#testimonial-3 {
+    background-color: #ffffff;
+    color: #19212e;
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color: white
+}
+
+#testimonial-5 {
+    background-color: #ffffff;
+    color: #19212e;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
+    font-size: 13px;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+}
+
+.character img {
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.grid-item h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.grid-item p {
+    opacity: 70%;
+}
+
+.info {
+    transform: translate(0, -7.5px);
+}
+
+.info .name {
+    opacity: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+}
+
+.info .vg {
+    margin: 0;
+}
+
+#quote {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    z-index: -1;
+}
+
+@media (min-width: 750px) {
+    #testimonials {
+        max-width: 1440px;
+
+        /* How to center a div */
+        /* Note: First input of margin is
+        top and bottom, while second input is
+        left and right, so "0 auto" centers horizontally
+        "auto 0" centers vertically, "auto auto" does both*/
+        margin: 0 auto;
+
+        justify-content: space-between;
+    }
+
+    #testimonials, #top, #bottom, #left {
+        display: flex;
+    }
+
+    #top, #bottom {
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+    #left {
+        flex-direction: column;
+        flex-basis: 63%;
+    }
+
+    #testimonial-1 {
+        flex-basis: 63%;
+    }
+
+    #testimonial-2 {
+        flex-basis: 35%;
+    }
+
+    #testimonial-3 {
+        flex-basis: 35%;
+    }
+
+    #testimonial-4 {
+        flex-basis: 63%;
+    }
+
+    #testimonial-5 {
+        flex-basis: 35%;
+    }
+}
